@@ -21,7 +21,6 @@ describe('Automation Practice Form Tests', () => {
 
   beforeEach(() => {
     cy.on('uncaught:exception', (err, runnable) => {
-        // Log the error if needed
         console.error(err);
         // Prevent Cypress from failing the test
         return false;
